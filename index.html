@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Владислав Школа — продвижение на маркетплейсах Wildberries</title>
+  <meta name="description" content="Продвижение магазинов на Wildberries — аналитика, SEO, реклама и сопровождение под ключ." />
+  <!-- Tailwind CDN (для прототипа) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            wbpurple: {
+              50: '#f6f0ff',
+              100: '#e9ddff',
+              500: '#7c3aed',
+              700: '#5b21b6',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Небольшая тень для карточек */
+    .card-shadow { box-shadow: 0 6px 18px rgba(0,0,0,0.6); }
+    /* Простая фон-иллюстрация для hero (заменяй на своё изображение) */
+    .hero-bg {
+      background-image: linear-gradient(180deg, rgba(9,9,11,0.6), rgba(9,9,11,0.6)),
+        url('https://images.unsplash.com/photo-1526378723009-07b3b7dc6e3a?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=000000');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-white antialiased">
+  <!-- ХЕДЕР -->
+  <header class="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="text-xl font-bold text-wbpurple-500">Владислав Школа</div>
+        <div class="text-sm text-gray-400 hidden md:block">— продвижение на маркетплейсах</div>
+      </div>
+
+      <nav class="hidden md:flex gap-6 text-gray-300">
+        <a href="#services" class="hover:text-wbpurple-100 transition">Услуги</a>
+        <a href="#cases" class="hover:text-wbpurple-100 transition">Кейсы</a>
+        <a href="#reviews" class="hover:text-wbpurple-100 transition">Отзывы</a>
+        <a href="#contacts" class="hover:text-wbpurple-100 transition">Контакты</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button class="hidden md:inline-block bg-gradient-to-r from-wbpurple-500 to-wbpurple-700 hover:from-wbpurple-700 hover:to-wbpurple-900 px-4 py-2 rounded-xl font-semibold">
+          Записаться на консультацию
+        </button>
+
+        <!-- mobile menu button (visual only) -->
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded bg-gray-800">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="text-gray-200">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-bg py-28">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4">Выведу твой магазин на Wildberries в ТОП</h1>
+      <p class="text-gray-300 text-lg md:text-xl mb-8">Увеличу продажи за счёт грамотного продвижения, аналитики и стратегии</p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#contacts" class="px-6 py-3 rounded-2xl bg-gradient-to-r from-wbpurple-500 to-wbpurple-700 font-semibold shadow-lg">Получить бесплатный аудит</a>
+        <a href="#cases" class="px-6 py-3 rounded-2xl border border-gray-700 text-gray-200">Посмотреть кейсы</a>
+      </div>
+
+      <p class="text-gray-400 text-sm mt-8">Бесплатный аудит включает: анализ карточек, трафика и рекламного бюджета</p>
+    </div>
+  </section>
+
+  <!-- ОБО МНЕ -->
+  <section id="about" class="max-w-5xl mx-auto px-6 py-14 text-center">
+    <img src="https://via.placeholder.com/160" alt="Владислав" class="w-36 h-36 rounded-full mx-auto mb-6 object-cover border-4 border-gray-800">
+    <h2 class="text-2xl md:text-3xl font-bold mb-3">Обо мне</h2>
+    <p class="text-gray-300 max-w-3xl mx-auto">
+      Меня зовут Владислав. Более 3 лет практики в продвижении на Wildberries — от
+      стартап-магазинов до брендов с оборотом 10+ млн ₽/мес. Моя цель — чтобы
+      магазин приносил прибыль, а не головную боль.
+    </p>
+    <p class="text-gray-500 mt-3 italic">«Я знаю, как сделать так, чтобы магазин приносил прибыль, а не головную боль»</p>
+  </section>
+
+  <!-- УСЛУГИ -->
+  <section id="services" class="bg-gray-900 py-14">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-2xl font-bold text-center mb-8">Услуги</h3>
+      <div class="grid gap-6 grid-cols-1 md:grid-cols-3">
+        <div class="bg-gray-800 p-6 rounded-2xl card-shadow">
+          <div class="mb-3 font-semibold text-wbpurple-300">Анализ магазина и конкурентов</div>
+          <p class="text-gray-400 text-sm">Глубокий аудит карточек, ценовой политики, трафика и ниши.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-2xl card-shadow">
+          <div class="mb-3 font-semibold text-wbpurple-300">Продвижение карточек товаров</div>
+          <p class="text-gray-400 text-sm">Оптимизация карточек: описания, фотографии, характеристики, uplifts.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-2xl card-shadow">
+          <div class="mb-3 font-semibold text-wbpurple-300">SEO-оптимизация и ключевые слова</div>
+          <p class="text-gray-400 text-sm">Подбор релевантных запросов и внедрение в карточки и метаданные.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-2xl card-shadow">
+          <div class="mb-3 font-semibold text-wbpurple-300">Настройка рекламы в кабинете WB</div>
+          <p class="text-gray-400 text-sm">Настройка кампаний, оптимизация CPA/ROI, таргет и ретаргет.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-2xl card-shadow">
+          <div class="mb-3 font-semibold text-wbpurple-300">Вывод в рекомендации и подборки</div>
+          <p class="text-gray-400 text-sm">Работа с показателями карточек и промо-акциями для попадания в подборки.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-2xl card-shadow">
+          <div class="mb-3 font-semibold text-wbpurple-300">Сопровождение под ключ</div>
+          <p class="text-gray-400 text-sm">Полное сопровождение: от запуска карточек до масштабирования продаж.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КЕЙСЫ / РЕЗУЛЬТАТЫ -->
+  <section id="cases" class="py-14">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-2xl font-bold text-center mb-8">Кейсы / Результаты</h3>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gray-900 p-6 rounded-2xl">
+          <h4 class="font-bold mb-3">До</h4>
+          <ul class="text-gray-400 list-disc pl-5">
+            <li>Продажи: 30 000 ₽/мес</li>
+            <li>Товары вне ТОП-100</li>
+            <li>CTR: 0.5%</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-2xl">
+          <h4 class="font-bold mb-3">После</h4>
+          <ul class="text-gray-400 list-disc pl-5">
+            <li>Продажи: 300 000 ₽/мес</li>
+            <li>Выход в ТОП-10 по ключевым запросам</li>
+            <li>CTR: 3.2%</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Простейшая табличка До/После -->
+      <div class="overflow-x-auto mt-8">
+        <table class="min-w-full text-left text-sm">
+          <thead>
+            <tr class="text-gray-300">
+              <th class="py-3 px-4">Показатель</th>
+              <th class="py-3 px-4">До</th>
+              <th class="py-3 px-4">После</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-gray-800">
+              <td class="py-3 px-4 text-gray-200">Месячные продажи</td>
+              <td class="py-3 px-4 text-gray-400">30 000 ₽</td>
+              <td class="py-3 px-4 text-wbpurple-300 font-semibold">300 000 ₽</td>
+            </tr>
+            <tr class="border-t border-gray-800">
+              <td class="py-3 px-4 text-gray-200">ТОП позиций</td>
+              <td class="py-3 px-4 text-gray-400">Нет</td>
+              <td class="py-3 px-4 text-wbpurple-300 font-semibold">ТОП-10</td>
+            </tr>
+            <tr class="border-t border-gray-800">
+              <td class="py-3 px-4 text-gray-200">CTR</td>
+              <td class="py-3 px-4 text-gray-400">0.5%</td>
+              <td class="py-3 px-4 text-wbpurple-300 font-semibold">3.2%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОТЗЫВЫ -->
+  <section id="reviews" class="bg-gray-900 py-14">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-2xl font-bold text-center mb-8">Отзывы клиентов</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-6 rounded-2xl card-shadow">
+          <p class="text-gray-300 mb-4">«Работа с Владиславом полностью изменила наш магазин. Продажи выросли в 5 раз!»</p>
+          <div class="flex items-center gap-3">
+            <img src="https://via.placeholder.com/48" alt="" class="w-12 h-12 rounded-full object-cover border border-gray-700" />
+            <div class="text-sm text-gray-400">Алексей, владелец магазина</div>
+          </div>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-2xl card-shadow">
+          <p class="text-gray-300 mb-4">«Понравился индивидуальный подход и прозрачная аналитика. Быстрый результат!»</p>
+          <div class="flex items-center gap-3">
+            <img src="https://via.placeholder.com/48" alt="" class="w-12 h-12 rounded-full object-cover border border-gray-700" />
+            <div class="text-sm text-gray-400">Марина, бренд</div>
+          </div>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-2xl card-shadow">
+          <p class="text-gray-300 mb-4">«Профессионально, по делу и без шаблонов — рекомендую.»</p>
+          <div class="flex items-center gap-3">
+            <img src="https://via.placeholder.com/48" alt="" class="w-12 h-12 rounded-full object-cover border border-gray-700" />
+            <div class="text-sm text-gray-400">Игорь, интернет-магазин</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПОЧЕМУ ИМЕННО Я -->
+  <section class="py-14">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h3 class="text-2xl font-bold mb-6">Почему именно я</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-900 p-6 rounded-2xl text-gray-300">Опыт с реальными кейсами и измеримыми результатами</div>
+        <div class="bg-gray-900 p-6 rounded-2xl text-gray-300">Индивидуальные стратегии — без шаблонов</div>
+        <div class="bg-gray-900 p-6 rounded-2xl text-gray-300">Быстрый выход в плюс и прозрачная аналитика</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-r from-wbpurple-500 to-wbpurple-700 py-12">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h4 class="text-2xl font-bold mb-4">Хочешь узнать, как увеличить продажи твоего магазина?</h4>
+      <a href="#contacts" class="inline-block px-6 py-3 rounded-2xl bg-white text-wbpurple-700 font-semibold">Записаться на бесплатную консультацию</a>
+    </div>
+  </section>
+
+  <!-- КОНТАКТЫ -->
+  <footer id="contacts" class="bg-gray-950 py-12">
+    <div class="max-w-3xl mx-auto px-6">
+      <h4 class="text-xl font-bold mb-4 text-center">Контакты</h4>
+
+      <form class="space-y-4 bg-gray-900 p-6 rounded-2xl" onsubmit="event.preventDefault(); alert('Заявка отправлена — в реальной версии нужно подключить бэкенд');">
+        <div>
+          <label class="block text-sm text-gray-300 mb-1">Имя</label>
+          <input type="text" required class="w-full p-3 rounded-lg bg-gray-800 text-white" placeholder="Ваше имя" />
+        </div>
+        <div>
+          <label class="block text-sm text-gray-300 mb-1">Телефон</label>
+          <input type="tel" required class="w-full p-3 rounded-lg bg-gray-800 text-white" placeholder="+7 (___) ___-__-__" />
+        </div>
+        <div>
+          <label class="block text-sm text-gray-300 mb-1">Telegram</label>
+          <input type="text" class="w-full p-3 rounded-lg bg-gray-800 text-white" placeholder="@yourtelegram" />
+        </div>
+        <div class="flex gap-3">
+          <button type="submit" class="flex-1 px-4 py-3 rounded-lg bg-gradient-to-r from-wbpurple-500 to-wbpurple-700 font-semibold">Отправить заявку</button>
+          <a href="https://t.me/" target="_blank" rel="noopener" class="px-4 py-3 rounded-lg border border-gray-700 text-gray-300">Написать в Telegram</a>
+        </div>
+      </form>
+
+      <div class="text-gray-500 text-sm text-center mt-6">
+        © <span id="year"></span> Владислав scool I Корпарация просветленных. | <a href="#" class="text-gray-400 underline">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Подпись года
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Мобильное меню (минимальное, только открытие / закрытие примера)
+    const btn = document.getElementById('mobileMenuBtn');
+    btn?.addEventListener('click', () => {
+      alert('В прототипе мобильное меню — добавь свой JS для раскрытия навигации.');
+    });
+  </script>
+</body>
+</html>
